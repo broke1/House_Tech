@@ -7,7 +7,10 @@ module.exports = defineConfig({
         additionalData: `@import "~@/variables.sass"`
       },
     }
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? './'
+    : '/'
 })
 
 

@@ -37,6 +37,12 @@
           <img src="../../../assets/social_whatsapp_header.svg">
         </a>
       </div>
+      <div class="header_section_container_popup_btn header_section_container_popup_btn__uncolor">
+        Заполнить бриф
+      </div>
+      <div class="header_section_container_popup_btn header_section_container_popup_btn__color">
+        Оставить заявку
+      </div>
     </div>
   </section>
 </template>

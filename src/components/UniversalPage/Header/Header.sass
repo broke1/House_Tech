@@ -103,4 +103,68 @@
           &:hover
             background: $whatsapp
             border-color: $whatsapp
+
+    &_popup_btn
+      width: 160px
+      height: 40px
+      display: flex
+      flex-flow: row
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      font-family: FontDIN Next W1G
+      font-weight: 500
+      font-size: 14px
+      line-height: 16.8px
+      text-transform: uppercase
+      position: relative
+      // border: 1px solid $primary_gold
+
+      &__uncolor
+        color: $primary_white
+        background: url("../../../assets/btn_outline_header.svg") no-repeat
+        background-position: center
+        background-size: contain
+
+        &::before
+          content: ""
+          position: absolute
+          width: 100%
+          height: 100%
+          left: 0
+          top: 0
+          opacity: 0
+          transition: $transition
+          background: url("../../../assets/btn_outline_header__hover.svg") no-repeat
+
+        &:hover
+
+          &:before
+            opacity: 1
+
+      &__color
+        color: $primary_black
+        background: url("../../../assets/btn_fill_header.svg") no-repeat
+        background-position: center
+        background-size: contain
+
+        &::before
+          content: "ОСТАВИТЬ ЗАЯВКУ"
+          position: absolute
+          display: flex
+          flex-flow: row
+          justify-content: center
+          align-items: center
+          width: 100%
+          height: 100%
+          left: 0
+          top: 0
+          opacity: 0
+          transition: $transition
+          background: url("../../../assets/btn_fill_header__hover.svg") no-repeat
+
+        &:hover
+
+          &:before
+            opacity: 1
           
