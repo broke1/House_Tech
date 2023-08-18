@@ -1,17 +1,17 @@
 <template class="app">
-  <Header />
+  <UniversalPage />
 </template>
 
 <script>
 
 
-import Header from './components/Header/Header.vue'
+import UniversalPage from './components/UniversalPage/UniversalPage.vue'
 
 
 export default {
   name: 'App',
   components: {
-    Header
+    UniversalPage
   }
 }
 </script>

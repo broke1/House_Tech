@@ -1,0 +1,106 @@
+.header_section
+  width: 100%
+  padding: 24px 0px
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: center
+  background: $primary_black
+
+  &_container
+    width: 1100px
+    padding-left: 24px
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+
+    &_logo
+      width: 70px
+      height: 48px
+      background: url("../../../assets/logo_header.svg") no-repeat
+      background-position: center
+      background-size: contain
+
+    &_contacts_block
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: center
+
+      &_icon
+        width: 24px
+        height: 24px
+        background-position: center
+        background-size: contain
+        margin-right: 30px
+
+        &__clock
+          background: url("../../../assets/clock_header.svg") no-repeat
+
+        &__phone
+          background: url("../../../assets/phone_header.svg") no-repeat
+
+      &_text
+        display: flex
+        flex-flow: column nowrap
+        justify-content: space-between
+        align-items: flex-start
+
+        &_up
+          color: $secondary_light_grey
+          font-family: FontDIN Next W1G
+          font-weight: 400
+          font-size: 14px
+          line-height: 15px
+          margin-bottom: 4px
+
+        &_down
+          color: $primary_white
+          font-family: FontDIN Next W1G
+          font-weight: 500
+          font-size: 16px
+          line-height: 19.2px
+
+    &_social_btn
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: flex-start
+      gap: 8px
+
+      &_link
+        width: 32px
+        height: 32px
+        max-width: 32px
+        max-height: 32px
+        border: 1px solid $primary_white
+        transition: $transition
+        display: flex
+        justify-content: center
+        align-items: center
+
+        img
+          width: 100%
+          height: 100%
+          object-fit: contain
+          max-width: 16px
+
+        &__telegram
+
+          &:hover
+            background: $telegram
+            border-color: $telegram
+
+        &__skype
+
+          &:hover
+            background: $skype
+            border-color: $skype
+        
+        &__whatsapp
+
+          &:hover
+            background: $whatsapp
+            border-color: $whatsapp
+          
