@@ -1,0 +1,82 @@
+$link_block: "menu_section_links_container_link_block"
+  
+.menu_section
+  width: 100%
+  position: relative
+  background: grey
+
+  &_transition_block
+    width: 100%
+    height: 10px
+    background: url("../../../assets/transition_menu.svg") no-repeat
+    background-size: contain
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+
+  &_links
+    border-bottom: 1px solid $primary_black
+    display: flex
+    justify-content: center
+    height: 60px
+
+    &_container
+      width: 1100px
+      display: flex
+      flex-flow: row nowrap
+      justify-content: center
+      gap: 100px
+      align-items: center
+      border-left: 1px solid $primary_black
+      border-right: 1px solid $primary_black
+
+      &_link_block
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        cursor: pointer
+        gap: 15px
+
+        &_url
+          color: $primary_white
+          font-family: FontDIN Next W1G
+          font-weight: 500
+          font-size: 16px
+          line-height: 19.2px
+          text-transform: uppercase
+
+        &_arrow
+          width: 16px
+          height: 16px
+          position: relative
+
+          &__left
+            position: absolute
+            top: 3px
+            left: 3px
+            width: 4px
+            height: 8px
+            background: url("../../../assets/arrow_left_menu.svg") no-repeat
+            background-size: contain
+            transition: $transition
+            transform: rotate(0deg)
+
+          &__right
+            position: absolute
+            bottom: 3px
+            right: 3px
+            width: 4px
+            height: 8px
+            background: url("../../../assets/arrow_right_menu.svg") no-repeat
+            background-size: contain
+
+        &:hover  &_arrow__left
+          transform: rotateX(180deg)
+
+        &:hover  &_arrow__right
+          transform: rotateX(180deg)
+
+         
+
