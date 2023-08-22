@@ -3,13 +3,14 @@
     <div class="title_section_container">
       <div class="title_section_container_left_part">
         <div class="title_section_container_left_part_breadcrumbs">
-          <div 
+          <a 
             v-for="(crumb, index) in breadcrumbs" 
-            :key="crumb" 
+            :key="crumb.name" 
+            :href="crumb.url"
             class="title_section_container_left_part_breadcrumbs_crumb"
             >
             <div class="title_section_container_left_part_breadcrumbs_crumb_text">
-              {{ crumb }}
+              {{ crumb.name }}
             </div>
             <div 
               v-if="index != breadcrumbs.length-1"
@@ -17,7 +18,7 @@
             >
             {{ "/" }}
             </div>
-          </div>
+          </a>
         </div>
         <div class="title_section_container_left_part_title">
           {{ title }}

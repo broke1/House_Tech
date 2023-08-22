@@ -1,6 +1,6 @@
 <template>
   <section class="menu_section">
-    <div class="menu_section_back"></div>
+    <!-- <div class="menu_section_back"></div> -->
     <div class="menu_section_transition_block"></div>
     <div class="menu_section_links">
       <div class="menu_section_links_container">
@@ -39,11 +39,9 @@ export default {
   },
   data() {
     return {
-      breadcrumbs: ["Главная","Услуги","Разработка брендбука"],
-      title: "Разработка брендбука",
-      subtitle: `Мы специализируемся на создании эффективных и уникальных материалов для вашего бизнеса, 
-      и готовы предложить вам наши профессиональные услуги в области разработки брендбука.
-      `
+      breadcrumbs: this.$store.state.breadcrumbs,
+      title: this.$store.state.title,
+      subtitle: this.$store.state.subtitle
     }
   }
 }
