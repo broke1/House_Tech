@@ -1,0 +1,89 @@
+.title_section
+  width: 100%
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-end
+  align-items: center
+  flex: 1
+  z-index: 2
+
+  &_container
+    width: calc(1110px - 2px)
+    height: 100%
+    padding-bottom: 84px
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: flex-end
+    border-right: 1px solid $primary_black
+    border-left: 1px solid $primary_black
+
+    &_left_part
+      display: flex
+      flex-flow: column nowrap
+      justify-content: flex-start
+      align-items: flex-start
+      width: 706px
+      padding-left: 24px
+      height: 192px
+
+      &_breadcrumbs
+        display: flex
+        flex-flow: row nowrap
+        justify-content: flex-start
+        align-items: center
+        margin-bottom: 16px
+
+        &_crumb
+          display: flex
+          flex-flow: row nowrap
+          justify-content: flex-start
+          align-items: center
+
+          &_text
+            color: $primary_white
+            font-family: FontDIN Next W1G
+            font-weight: 400
+            font-size: 18px
+            line-height: 21.6px
+
+          &_delimetr
+            color: $primary_gold
+            font-family: FontDIN Next W1G
+            font-weight: 400
+            font-size: 18px
+            line-height: 21.6px
+            margin: 0 8px
+
+      &_title
+        color: $primary_white
+        font-family: FontDIN Next W1G
+        font-weight: 700
+        font-size: 48px
+        line-height: 48px
+        margin-bottom: 16px
+        text-transform: uppercase
+
+      &_underline
+        width: 160px
+        height: 8px
+        margin-bottom: 16px
+        background: url(../../../../assets/underline_title.svg) no-repeat
+        background-size: contain
+
+      &_subtitle
+        color: $primary_white
+        font-family: FontDIN Next W1G
+        font-weight: 400
+        font-size: 18px
+        line-height: 21.6px
+
+    &_right_part
+      width: 266px
+      height: 192px
+      background: url(../../../../assets/reverse_text_title.svg) no-repeat
+      background-size: contain
+
+
+         
+
