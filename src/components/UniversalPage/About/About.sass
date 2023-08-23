@@ -1,6 +1,10 @@
 .about_section
   position: relative
   width: 100%
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-start
+  align-items: center
 
   &_transition_block
     width: 100%
@@ -10,6 +14,171 @@
     position: absolute
     top: 0
     left: 0
+
+  &_container
+    width: 1100px
+
+    &_whatis
+      width: 100%
+      padding: 60px 0
+      border: 1px solid $primary_black
+
+      &_block
+        width: 100%
+        margin: 60px 0
+        display: flex
+        flex-flow: row nowrap
+        justify-content: space-between
+        align-items: center
+        position: relative
+
+        &_rectangle
+          position: absolute
+          top: 0
+          left: 0
+          width: 8px
+          height: 43px
+          background: $primary_dark_blue
+
+        &_left
+          width: 706px
+          margin-left: 24px
+          height: 155px
+          display: flex
+          flex-flow: column nowrap
+          justify-content: flex-start
+          align-items: flex-start
+
+          &_title
+            color: $primary_black
+            font-family: $fontDin
+            font-weight: 700
+            font-size: 36px
+            line-height: 43.2px
+            text-transform: uppercase
+            margin-bottom: 24px
+
+          &_text
+            color: $primary_black
+            font-family: $fontDin
+            font-weight: 400
+            font-size: 18px
+            line-height: 21.6px
+
+        &_right
+          width: calc(350px - 32px)
+          padding: 0 16px
+          display: flex
+          flex-flow: row nowrap
+          justify-content: center
+          align-items: center
+
+    &_whyis
+      width: 100%
+      padding: 60px 0
+      border: 1px solid $primary_black
+      border-top: none
+      border-bottom: none
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+      position: relative
+
+      &_left
+        width: 540px
+        height: 600px
+        background: url("../../../assets/whyis_left_img_about.svg") no-repeat
+        background-position: center
+        background-size: contain
+
+      &_right
+        width: 445px
+        height: 624px
+        padding-right: 95px
+        display: flex
+        flex-flow: column nowrap
+        justify-content: flex-start
+        align-items: flex-start
+
+        &_title_block
+          padding-left: 36px
+          padding-bottom: 24px
+
+          &_text
+            font-family: $fontDin
+            font-weight: 700
+            font-size: 24px
+            line-height: 28.8px
+            text-transform: uppercase
+            margin-bottom: 16px
+
+          &_delimetr
+            width: 160px
+            height: 8px
+            background: url("../../../assets/delimetr_title_about.svg") no-repeat
+            background-position: center
+            background-size: contain
+
+        &_list_block
+          display: flex
+          flex-flow: column nowrap
+          justify-content: flex-start
+          align-items: flex-start
+
+          &_reason
+            display: flex
+            flex-flow: row nowrap
+            justify-content: flex-start
+            align-items: flex-start
+
+            &_delimetr
+              width: 20px
+              min-width: 20px
+              height: 100%
+              margin-right: 16px
+              position: relative
+
+              &_dot
+                width: 8px
+                height: 8px
+                background: url("../../../assets/blue_dark_romb.svg")
+                background-size: contain
+                position: absolute
+                margin: 0 6px
+                top: 8px
+
+              &_line
+                width: 1px
+                height: 100%
+                position: absolute
+                margin: 0 9.5px
+                bottom: 0
+                background: $primary_dark_blue
+                
+            &_text
+              font-family: $fontDin
+              font-weight: 400
+              font-size: 18px
+              line-height: 21.6px
+              margin-bottom: 24px
+
+            &:first-child &_delimetr 
+
+              &_line
+                height: calc(100% - 8px)
+
+            &:last-child &_delimetr 
+
+              &_line
+                bottom: auto
+                top: 0
+                height: 8px
+            
+
+
+
+
 
 
          
