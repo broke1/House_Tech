@@ -5,6 +5,11 @@
   flex-flow: column nowrap
   justify-content: flex-start
   align-items: center
+  background-color: $primary_light_gray
+  background-image: url("../../../assets/big_letters_about.svg")
+  background-repeat: no-repeat
+  background-size: contain
+  background-position-y: 60px
 
   &_transition_block
     width: 100%
@@ -13,6 +18,16 @@
     background-size: contain
     position: absolute
     top: 0
+    left: 0
+
+  &_transition_block_blue
+    width: 100%
+    height: 10px
+    background: url("../../../assets/transition_about.svg") no-repeat
+    background-size: contain
+    background-position: bottom
+    position: absolute
+    bottom: 0
     left: 0
 
   &_container
@@ -75,7 +90,7 @@
 
     &_whyis
       width: 100%
-      padding: 60px 0
+      padding: 84px 0 60px 0
       border: 1px solid $primary_black
       border-top: none
       border-bottom: none
@@ -84,6 +99,23 @@
       justify-content: space-between
       align-items: center
       position: relative
+
+      &_running_line
+        position: absolute
+        width: 100%
+        height: 24px
+        overflow: hidden
+        top: 0
+        left: 0
+
+        &_inside_block
+          height: 8px
+          margin-top: 16px
+          animation: line_transform 15s linear 0s infinite
+          background: url("../../../assets/running_line_about.svg") no-repeat
+          background-size: cover
+          background-position: center
+          width: 3300px
 
       &_left
         width: 540px

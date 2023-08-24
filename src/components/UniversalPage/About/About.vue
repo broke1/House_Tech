@@ -26,6 +26,9 @@
         </div>
       </div>
       <div class="about_section_container_whyis">
+        <div class="about_section_container_whyis_running_line">
+          <div class="about_section_container_whyis_running_line_inside_block"></div>
+        </div>
         <div class="about_section_container_whyis_left"></div>
         <div class="about_section_container_whyis_right">
           <div class="about_section_container_whyis_right_title_block">
@@ -52,6 +55,7 @@
         </div>
       </div>
     </div>
+    <div class="about_section_transition_block_blue"></div>
   </section>
 </template>
 
@@ -61,8 +65,6 @@ import animationJSON from '../../../assets/stylus_about.json'
 
 export default {
   name: 'AboutSection',
-  props: {
-  },
   data(){
     return {
       animationJSON

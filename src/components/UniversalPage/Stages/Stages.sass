@@ -1,0 +1,191 @@
+.stages_section
+  position: relative
+  width: 100%
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: flex-start
+  background-color: $primary_dark_blue
+  background-image: url("../../../assets/big_letters_stages.svg")
+  background-repeat: no-repeat
+  background-size: contain
+  background-position-y: 305px
+
+  &_container
+    width: calc(1100px - 2px)
+    display: flex
+    flex-flow: column nowrap
+    justify-content: flex-start
+    align-items: center
+    border: 1px solid $primary_black
+    border-top: none
+    border-bottom: none
+
+    &_stages_block
+      padding: 60px 0
+      width: 100%
+      height: calc(680px - 120px - 2px)
+      border-bottom: 1px solid $primary_black
+
+      &_title
+        padding: 24px 0
+        display: flex
+        flex-flow: row nowrap
+        justify-content: flex-start
+        align-items: center
+        margin-bottom: 30px
+
+        &_line
+          margin-right: 16px
+          width: 8px
+          height: 44px
+          background: $primary_gold
+
+        &_text
+          font-family: $fontDin
+          font-weight: 700
+          font-size: 36px
+          line-height: 43.2px
+          color: $primary_white
+          text-transform: uppercase
+
+      &_stage
+        display: flex
+        flex-flow: row nowrap
+        justify-content: flex-start
+        align-items: flex-start
+        margin-bottom: 24px
+
+        &_number
+          width: calc(46px - 16px)
+          padding: 8px
+          height: calc(52px - 16px)
+          background: $primary_gold
+          font-family: $fontDin
+          font-weight: 700
+          font-size: 30px
+          line-height: 30px
+          color: $primary_black
+          text-transform: uppercase
+          writing-mode: vertical-lr
+          letter-spacing: -3px
+
+        &_text_block
+          display: flex
+          flex-flow: column nowrap
+          justify-content: flex-start
+          align-items: flex-start
+          padding: 0 16px
+          width: calc(684px - 32px)
+
+          &_title
+            font-family: $fontDin
+            font-weight: 700
+            font-size: 20px
+            line-height: 24px
+            color: $primary_white
+            text-transform: uppercase
+            margin-bottom: 16px
+
+          &_text
+            font-family: $fontDin
+            font-weight: 400
+            font-size: 16px
+            line-height: 19.2px
+            color: $primary_white
+            opacity: 0.72
+
+        &:last-child
+          margin-bottom: 0
+
+        &:last-child &_number
+          background: $primary_black
+          color: $primary_white
+
+    &_lines_block
+      width: 100%
+      height: calc(66px - 32px)
+      overflow: hidden
+      padding: 16px 0
+      display: flex
+      flex-flow: column nowrap
+      justify-content: space-between
+      align-items: flex-start
+      border-bottom: 1px solid $primary_black
+
+      &_line_top
+        height: 8px
+        animation: line_transform 15s linear 0s infinite
+        background: url("../../../assets/running_line_about.svg") no-repeat
+        background-size: cover
+        background-position: center
+        width: 3300px
+
+      &_line_bottom
+        height: 8px
+        animation: line_transform_reverse 15s linear 0s infinite
+        background: url("../../../assets/running_line_about.svg") no-repeat
+        background-size: cover
+        background-position: center
+        width: 3300px
+
+    &_price_block
+      padding: 48px 0 60px 0
+      display: flex
+      width: 100%
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+      gap: 30px
+
+      &_left
+        width: 540px
+        height: 344px
+        background: url("../../../assets/calc_stages.svg") no-repeat
+        background-size: contain
+        background-position: center
+
+      &_right
+        padding: 0 24px 48px 0
+        display: flex
+        flex-flow: column nowrap
+        justify-content: flex-start
+        align-items: flex-start
+        gap: 24px
+        width: 540px
+
+        &_title
+          font-family: $fontDin
+          font-weight: 700
+          font-size: 36px
+          line-height: 43.2px
+          color: $primary_white
+          text-transform: uppercase
+
+        &_underline
+          width: 160px
+          height: 8px
+          background: url(../../../assets/underline_title.svg) no-repeat
+          background-size: contain
+
+        &_text
+          font-family: $fontDin
+          font-weight: 400
+          font-size: 18px
+          line-height: 21.6px
+          color: $primary_white
+
+
+
+          
+
+
+            
+
+
+
+
+
+
+         
+
