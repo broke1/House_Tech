@@ -1,0 +1,159 @@
+.footer_section
+  position: relative
+  width: 100%
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-start
+  align-items: center
+  background-color: $primary_black
+
+  &_container
+    width: 1100px 
+    display: flex
+    flex-flow: column nowrap
+    justify-content: flex-start
+    align-items: center
+
+    &_contacts_container
+      width: 1100px
+      height: 60px
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: center
+      gap: 30px
+
+      &_block
+        display: flex
+        flex-flow: row nowrap
+        justify-content: center
+        align-items: center
+        width: calc(255px - 32px)
+        height: calc(60px - 16px)
+        padding: 8px 16px
+
+        &_icon
+          width: 24px
+          height: 24px
+          background-position: center
+          background-size: contain
+          margin-right: 16px
+          min-width: 24px
+
+          &__address
+            background: url("../../../assets/address_footer.svg") no-repeat
+
+          &__email
+            background: url("../../../assets/email_footer.svg") no-repeat
+
+          &__phone
+            background: url("../../../assets/phone_header.svg") no-repeat
+
+        &_text
+          display: flex
+          flex-flow: column nowrap
+          justify-content: space-between
+          align-items: flex-start
+
+          &_up
+            color: $secondary_light_grey
+            font-family: $fontDin
+            font-weight: 400
+            font-size: 14px
+            line-height: 15px
+            margin-bottom: 4px
+
+          &_down
+            color: $primary_white
+            font-family: $fontDin
+            font-weight: 500
+            font-size: 16px
+            line-height: 19.2px
+
+      &_popup_btn
+        width: 255px
+        height: 60px
+        display: flex
+        flex-flow: row
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        font-family: $fontDin
+        font-weight: 500
+        font-size: 16px
+        line-height: 19.2px
+        text-transform: uppercase
+        position: relative
+        color: $primary_black
+        background: url("../../../assets/btn_footer_order.svg") no-repeat
+        background-position: center
+        background-size: contain
+        overflow: hidden
+
+        &::before
+          content: "ЗАКАЗАТЬ ПРОЕКТ"
+          position: absolute
+          display: flex
+          flex-flow: row
+          justify-content: center
+          align-items: center
+          width: 100%
+          height: 100%
+          left: 0
+          top: 0
+          opacity: 0
+          transition: $transition
+          background: url("../../../assets/btn_footer_order__hover.svg") no-repeat
+          background-position: center
+          background-size: contain
+
+        &:hover
+
+          &:before
+            opacity: 1
+
+        &_dop_img
+          position: absolute
+          width: 20px
+          height: 8px
+          left: 24px
+          bottom: -2px
+          opacity: 1
+          transition: $transition
+          background: url("../../../assets/btn_footer_order_line.svg") no-repeat
+
+          &::before
+            content: ""
+            position: absolute
+            width: 20px
+            height: 8px
+            left: 0
+            bottom: 0
+            opacity: 0
+            transition: $transition
+            background: url("../../../assets/btn_footer_order_line__hover.svg") no-repeat
+
+        &:hover &_dop_img
+
+          &:before
+            opacity: 1
+
+        
+
+
+
+    
+
+
+          
+
+
+            
+
+
+
+
+
+
+         
+

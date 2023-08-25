@@ -5,7 +5,7 @@
     <div class="menu_section_links">
       <div class="menu_section_links_container">
         <div 
-          v-for="link in menu" 
+          v-for="link in this.$store.state.menu" 
           :key="link.name" 
           class="menu_section_links_container_link_block"
         >
@@ -33,9 +33,6 @@ export default {
   name: 'MenuSection',
   components: {
     Title
-  },
-  props: {
-    menu: Array
   },
   data() {
     return {
