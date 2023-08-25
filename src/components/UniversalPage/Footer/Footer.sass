@@ -138,6 +138,228 @@
           &:before
             opacity: 1
 
+
+    &_links
+      margin: 72px 0
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: flex-start
+      width: 100%
+      height: 284px
+      gap: 30px
+
+    &_labels
+      margin: 72px 0
+      display: flex
+      flex-flow: row nowrap
+      justify-content: flex-start
+      align-items: flex-start
+      width: 100%
+      height: 112px
+      gap: 30px
+
+      &_block
+        display: flex
+        flex-flow: row nowrap
+        justify-content: flex-start
+        align-items: center
+        height: 100%
+
+        &_first
+          width: 540px
+
+        &_second
+          width: 160px
+
+        &_third
+          width: 160px
+
+        &_fourth
+          width: 160px
+          justify-content: center
+
+        &_line
+          width: 4px
+          min-width: 4px
+          height: 100%
+          background: $primary-gold
+          margin-right: 16px
+
+        &_text_block
+          display: flex
+          flex-flow: column nowrap
+          justify-content: space-between
+          align-items: flex-start
+          height: 100%
+
+          &_text
+            font-family: $fontDin
+            font-weight: 400
+            font-size: 12px
+            line-height: 16px
+            color: $secondary_light_grey
+
+        &_icon_min
+          background: url("../../../assets/icon_min_footer.svg") no-repeat
+          background-size: contain
+          background-position: center
+          width: 160px
+          height: 48px
+
+        &_icon_artstation
+          width: 140px
+          height: 48px
+          background: url("../../../assets/icon_artstation_footer.svg") no-repeat
+          background-size: contain
+          background-position: center
+
+        &_icon_ros_patent
+          background: url("../../../assets/icon_rosp_footer.svg") no-repeat
+          background-size: contain
+          background-position: center
+          width: 160px
+          height: 48px
+
+    &_end
+      padding: 8px 0
+      height: calc(77px - 16px)
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+      width: 100%
+
+      &_left
+        display: flex
+        flex-flow: row nowrap
+        justify-content: flex-start
+        align-items: center
+
+        &_logo
+          width: 60px
+          height: 45px
+          background: url("../../../assets/logo_footer.svg") no-repeat
+          background-size: contain
+          background-position: center
+          margin-right: 24px
+
+        &_text
+          width: 136px
+          font-family: $fontDin
+          font-weight: 400
+          font-size: 12px
+          line-height: 16px
+          color: $secondary_light_grey
+
+      &_right
+        display: flex
+        flex-flow: row nowrap
+        justify-content: flex-start
+        align-items: center
+
+        &_other_resourses
+          display: flex
+          flex-flow: row nowrap
+          justify-content: flex-start
+          align-items: center
+          margin-right: 24px
+          width: calc(255px - 32px)
+          padding: 8px 16px
+
+          &_icon
+            width: 24px
+            height: 24px
+            background: url("../../../assets/icon_globe_footer.svg") no-repeat
+            background-size: contain
+            background-position: center
+            margin-right: 16px
+
+          &_text_block
+            display: flex
+            flex-flow: column nowrap
+            justify-content: space-between
+            align-items: flex-start
+            height: 38px
+
+            &_text
+              font-family: $fontDin
+              font-weight: 400
+              font-size: 14px
+              line-height: 15px
+              color: $secondary_light_grey
+
+            &_link
+              font-family: $fontDin
+              font-weight: 500
+              font-size: 16px
+              line-height: 19.2px
+              color: $primary-white
+
+        &_links
+          display: flex
+          flex-flow: row nowrap
+          justify-content: flex-start
+          align-items: center
+
+          &_text
+            font-family: $fontDin
+            font-weight: 400
+            font-size: 16px
+            line-height: 19.2px
+            color: $secondary_light_grey
+            margin-right: 16px
+
+          &_social_btn
+            display: flex
+            flex-flow: row nowrap
+            justify-content: flex-start
+            align-items: flex-start
+            gap: 16px
+
+            &_link
+              width: 32px
+              height: 32px
+              max-width: 32px
+              max-height: 32px
+              border: 1px solid $primary_white
+              transition: $transition
+              display: flex
+              justify-content: center
+              align-items: center
+
+              img
+                width: 100%
+                height: 100%
+                object-fit: contain
+                max-width: 16px
+
+              &__telegram
+
+                &:hover
+                  background: $telegram
+                  border-color: $telegram
+
+              &__skype
+
+                &:hover
+                  background: $skype
+                  border-color: $skype
+              
+              &__whatsapp
+
+                &:hover
+                  background: $whatsapp
+                  border-color: $whatsapp
+
+
+
+
+
+        
+
+
+
         
 
 
