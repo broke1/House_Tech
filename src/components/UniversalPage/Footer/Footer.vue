@@ -111,6 +111,14 @@
         </div>
       </div>
     </div>
+    <div class="footer_section_btn_call"></div>
+    <div 
+      class="footer_section_arrow_top"
+      @click="scrollToTop"
+    >
+      <div class="footer_section_arrow_top_arrow"></div>
+      <div class="footer_section_arrow_top_arrow_hidden"></div>
+    </div>
   </section>
 </template>
 
@@ -122,6 +130,11 @@ export default {
   name: 'FooterSection',
   components: {
     Links
+  },
+  methods: {
+    scrollToTop() {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    },
   },
 }
 </script>

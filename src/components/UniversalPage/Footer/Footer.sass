@@ -352,6 +352,60 @@
                   background: $whatsapp
                   border-color: $whatsapp
 
+  &_btn_call
+    position: fixed
+    bottom: 8vh
+    right: 1vw
+    width: 72px
+    height: 72px
+    cursor: pointer
+    background: url("../../../assets/btn_call_footer.svg") no-repeat
+    background-size: contain
+    background-position: center
+
+  &_arrow_top
+    width: 40px
+    height: 40px
+    overflow: hidden
+    background: url("../../../assets/arrow_back_footer.svg") no-repeat
+    background-size: contain
+    background-position: center
+    cursor: pointer
+    position: fixed
+    bottom: 2vh
+    right: 2vw
+
+    &:hover &_arrow
+      transform: translateY(-100%)
+
+      &_hidden
+        transform: translateY(0)
+
+    &_arrow
+      position: absolute
+      top: 0
+      left: 0
+      width: 40px
+      height: 40px
+      background: url("../../../assets/arrow_up_footer.svg") no-repeat
+      background-size: 50%
+      background-position: center
+      transform: translateY(0)
+      transition: $transition
+
+      &_hidden
+        position: absolute
+        top: 0
+        left: 0
+        width: 40px
+        height: 40px
+        background: url("../../../assets/arrow_up_footer.svg") no-repeat
+        background-size: 50%
+        background-position: center
+        transform: translateY(100%)
+        transition: $transition
+
+
 
 
 
