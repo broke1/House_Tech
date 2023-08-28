@@ -6,10 +6,17 @@
   justify-content: flex-start
   align-items: center
   background-color: $primary_light_gray
-  background-image: url("../../../assets/big_letters_about.svg")
-  background-repeat: no-repeat
-  background-size: contain
-  background-position-y: 60px
+
+  &_back_name_block
+    width: 100%
+    height: 580px
+    background: url("../../../assets/big_letters_about.svg") no-repeat
+    background-size: contain
+    position: absolute
+    top: 60px
+    left: 0
+    transition: all 0.4s linear
+    transform: translateY(0)
 
   &_transition_block
     width: 100%
@@ -31,7 +38,7 @@
     left: 0
 
   &_container
-    width: 1100px
+    width: 1110px
 
     &_whatis
       width: 100%
@@ -76,7 +83,7 @@
           &_text
             color: $primary_black
             font-family: $fontDin
-            font-weight: 400
+            font-weight: 300
             font-size: 18px
             line-height: 21.6px
 
@@ -120,7 +127,7 @@
       &_left
         width: 540px
         height: 600px
-        background: url("../../../assets/whyis_left_img_about.svg") no-repeat
+        background: url("../../../assets/whyis_left_img_about.png") no-repeat
         background-position: center
         background-size: contain
 

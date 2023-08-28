@@ -1,5 +1,9 @@
 <template>
   <section class="about_section">
+    <div 
+      class="about_section_back_name_block"
+      :style="{ transform: `translateY(${moveElem}px)`}"
+    ></div>
     <div class="about_section_transition_block"></div>
     <div class="about_section_container">
       <div class="about_section_container_whatis">
@@ -67,7 +71,18 @@ export default {
   name: 'AboutSection',
   data(){
     return {
-      animationJSON
+      animationJSON,
+      beforePos: 0,
+      moveElem: 60
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScrollAbout)
+  },
+  methods: {
+    handleScrollAbout () {
+      this.moveElem += (window.scrollY - this.beforePos)/2
+      this.beforePos = window.scrollY
     }
   }
 }

@@ -1,5 +1,9 @@
 <template>
   <section class="stages_section">
+    <div
+      class="stages_section_back_name_block"
+      :style="{ transform: `translateY(${moveElem}px)`}"
+    ></div>
     <div class="stages_section_container">
       <div class="stages_section_container_stages_block">
         <div class="stages_section_container_stages_block_title">
@@ -50,7 +54,22 @@
 
 
 export default {
-  name: 'StagesSection'
+  name: 'StagesSection',
+  data(){
+    return {
+      beforePos: 0,
+      moveElem: 60
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScrollStages)
+  },
+  methods: {
+    handleScrollStages () {
+      this.moveElem += (window.scrollY - 1300 - this.beforePos)/2
+      this.beforePos = window.scrollY - 1300
+    }
+  }
 }
 </script>
 
