@@ -50,8 +50,8 @@ export default {
   },
   methods: {
     handleScroll () {
-      this.moveLeft += (window.scrollY - this.beforePos)/4
-      this.moveRight += (window.scrollY - this.beforePos)/2
+      this.moveLeft += (window.scrollY - this.beforePos)/6
+      this.moveRight += (window.scrollY - this.beforePos)/6
       this.beforePos = window.scrollY
     }
   }
