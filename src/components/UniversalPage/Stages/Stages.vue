@@ -66,7 +66,7 @@ export default {
   },
   methods: {
     handleScrollStages () {
-      this.moveElem += (window.scrollY - 1300 - this.beforePos)/2
+      this.moveElem += (window.scrollY - 1300 - this.beforePos)/6
       this.beforePos = window.scrollY - 1300
     }
   }
