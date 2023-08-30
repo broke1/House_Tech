@@ -95,7 +95,7 @@
             font-family: $fontDinMedium
             font-weight: 500
             font-size: 16px
-            line-height: 19.2px
+            line-height: 19px
 
       &_popup_btn
         width: 255px
@@ -108,7 +108,7 @@
         font-family: $fontDinMedium
         font-weight: 500
         font-size: 16px
-        line-height: 19.2px
+        line-height: 19px
         text-transform: uppercase
         position: relative
         color: $primary_black
@@ -320,7 +320,7 @@
               font-family: $fontDinMedium
               font-weight: 500
               font-size: 16px
-              line-height: 19.2px
+              line-height: 19px
               color: $primary-white
 
         &_links
@@ -333,7 +333,7 @@
             font-family: $fontDin
             font-weight: 300
             font-size: 16px
-            line-height: 19.2px
+            line-height: 19px
             color: $secondary_light_grey
             margin-right: 16px
 
@@ -382,13 +382,32 @@
   &_btn_call
     position: fixed
     bottom: 8vh
-    right: 1vw
+    right: 24px
     width: 72px
     height: 72px
     cursor: pointer
     background: url("../../../assets/btn_call_footer.svg") no-repeat
-    background-size: contain
+    background-size: cover
     background-position: center
+    transition: $transition
+
+    &:hover
+      width: 88px
+      right: 16px
+
+    &_line_left
+      width: 8px
+      height: 72px
+      position: absolute
+      left: 0
+      top: 0
+
+    &_line_right
+      width: 8px
+      height: 72px
+      position: absolute
+      right: 0
+      top: 0
 
   &_arrow_top
     width: 40px
@@ -400,7 +419,7 @@
     cursor: pointer
     position: fixed
     bottom: 2vh
-    right: 2vw
+    right: 40px
 
     &:hover &_arrow
       transform: translateY(-100%)
