@@ -111,26 +111,28 @@
         </div>
       </div>
     </div>
-    <div class="footer_section_btn_call">
-      <div class="footer_section_btn_call_line_left">
-        <Vue3Lottie 
-          :animationData="animationJsonLeftLine" 
-          :height="72" 
-          :width="8" 
-          :loop="true"
-          :speed="1"
-          :autoPlay="true"
-        />
-      </div>
-      <div class="footer_section_btn_call_line_right">
-        <Vue3Lottie 
-          :animationData="animationJsonRightLine" 
-          :height="72" 
-          :width="8" 
-          :loop="true"
-          :speed="1"
-          :autoPlay="true"
-        />
+    <div class="footer_section_btn_call_conteiner">
+      <div class="footer_section_btn_call_conteiner_block">
+        <div class="footer_section_btn_call_conteiner_block_line_left">
+          <Vue3Lottie 
+            :animationData="animationJsonLeftLine" 
+            :height="72" 
+            :width="8" 
+            :loop="true"
+            :speed="1"
+            :autoPlay="true"
+          />
+        </div>
+        <div class="footer_section_btn_call_conteiner_block_line_right">
+          <Vue3Lottie 
+            :animationData="animationJsonRightLine" 
+            :height="72" 
+            :width="8" 
+            :loop="true"
+            :speed="1"
+            :autoPlay="true"
+          />
+        </div>
       </div>
     </div>
     <div 
@@ -148,7 +150,7 @@
 import Links from './Links/Links.vue'
 
 import animationJsonLeftLine from '../../../assets/stylus_call_btn_left'
-import animationJsonRightLine from '../../../assets/stylus_call_btn_left'
+import animationJsonRightLine from '../../../assets/stylus_call_btn_right'
 
 export default {
   name: 'FooterSection',
